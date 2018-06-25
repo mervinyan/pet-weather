@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const API_URL = 'https://secure-escarpment-53236.herokuapp.com/api';
+export const API_URL = process.env.API_URL || process.env.REACT_APP_HOST + ':3000/api';
 
 export function errorHandler(dispatch, error, type) {
   console.log('Error Type: ', type);
