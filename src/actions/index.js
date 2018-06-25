@@ -1,7 +1,6 @@
 import axios from 'axios';
-import config from 'config';
 
-export const API_URL = config.API_URL + '/api';
+export const API_URL = 'https://secure-escarpment-53236.herokuapp.com/api';
 
 export function errorHandler(dispatch, error, type) {
   console.log('Error Type: ', type);
