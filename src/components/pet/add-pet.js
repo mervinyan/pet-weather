@@ -81,7 +81,7 @@ class AddPet extends Component {
   }
 
   handleTypeChange = e => {
-    let filteredBreeds = this.props.breeds.filter(breed => breed.type == e.target.value);
+    let filteredBreeds = this.props.breeds.filter(breed => breed.type._id == e.target.value);
     this.setState({
       type: e.target.value,
       filteredBreeds: filteredBreeds
