@@ -1,6 +1,7 @@
 import axios from 'axios';
+import config from 'config';
 
-export const API_URL = (process.env.API_URL || (process.env.REACT_APP_HOST + ':3000')) + '/api';
+export const API_URL = config.API_URL + '/api';
 
 export function errorHandler(dispatch, error, type) {
   console.log('Error Type: ', type);
