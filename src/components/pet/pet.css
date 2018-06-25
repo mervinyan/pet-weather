@@ -1,0 +1,12 @@
+.pet-row {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.dog {
+  background-image: url('./dog.png');
+}
+
+.cat {
+  background-image: url('./cat.png');
+}
