@@ -1,4 +1,4 @@
-import { getData, postData, CLIENT_ROOT_URL } from './index';
+import { getData, postData } from './index';
 
 import {
   PET_ERROR,
@@ -35,7 +35,6 @@ export function addPet({ name, type, breed, location }) {
   const url = `/pets`;
   return (dispatch) => {
     postData(ADD_PET, PET_ERROR, true, url, dispatch, data);
-    // window.location.href = CLIENT_ROOT_URL + '/pets';
   };
 }
 

@@ -8,9 +8,6 @@ import Map from './map';
 import './pet.css';
 
 class PetList extends Component {
-  constructor(props) {
-    super(props);
-  }
 
   componentWillMount() {
     this.props.fetchPets();
